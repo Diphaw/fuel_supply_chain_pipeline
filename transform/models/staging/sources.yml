@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: fuel_raw
+    schema: fuel_raw
+    tables:
+      - name: master_terminals
+      - name: fuel_shipments
+      - name: daily_tank_storage

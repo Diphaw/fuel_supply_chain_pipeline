@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fct_terminal_stock_health
+    description: "Tabel analitik ketahanan pasokan BBM (Days of Inventory) per terminal dan produk."
+    columns:
+      - name: terminal_id
+        data_tests:
+          - not_null
+      - name: stock_health_status
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['CRITICAL_STOCK', 'SAFE_STOCK', 'HIGH_STOCK']
+
+  - name: fct_logistics_performance
+    description: "Tabel analitik performa distribusi logistik, ketepatan waktu (OTIF), dan keterlambatan."
+    columns:
+      - name: shipment_id
+        data_tests:
+          - unique
+          - not_null
+      - name: delivery_status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['ON_TIME', 'DELAYED', 'IN_TRANSIT']

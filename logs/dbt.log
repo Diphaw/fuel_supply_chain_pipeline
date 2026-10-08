@@ -1,0 +1,77 @@
+[0m14:11:49.966975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6050ba5d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60529f0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f604f54b9d0>]}
+
+
+============================== 14:11:49.970926 | c8ade4f8-5278-4559-a38b-35f3c5d1b13c ==============================
+[0m14:11:49.970926 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:11:49.971458 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'quiet': 'False', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'profiles_dir': '/home/phaw/.dbt', 'static_parser': 'True', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'fail_fast': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt init transform', 'empty': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'debug': 'False', 'maximum_seed_size_mib': '1'}
+[0m14:11:49.983149 [debug] [MainThread]: Starter project path: /home/phaw/Documents/Python/Data Engineer/fuel-supply-chain-pipeline/venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m14:11:49.986763 [info ] [MainThread]: Setting up your profile.
+[0m14:14:13.894710 [info ] [MainThread]: Profile transform written to /home/phaw/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m14:14:13.900121 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m14:14:13.903013 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:14:13.904637 [info ] [MainThread]: python version: 3.14.2
+[0m14:14:13.905211 [info ] [MainThread]: python path: /home/phaw/Documents/Python/Data Engineer/fuel-supply-chain-pipeline/venv/bin/python3
+[0m14:14:13.905698 [info ] [MainThread]: os info: Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39
+[0m14:14:13.951524 [info ] [MainThread]: Using profiles dir at /home/phaw/.dbt
+[0m14:14:13.952318 [info ] [MainThread]: Using profiles.yml file at /home/phaw/.dbt/profiles.yml
+[0m14:14:13.952822 [info ] [MainThread]: Using dbt_project.yml file at /home/phaw/Documents/Python/Data Engineer/fuel-supply-chain-pipeline/transform/dbt_project.yml
+[0m14:14:13.953734 [info ] [MainThread]: adapter type: postgres
+[0m14:14:13.954238 [info ] [MainThread]: adapter version: 1.11.0
+[0m14:14:14.093982 [info ] [MainThread]: Configuration:
+[0m14:14:14.094511 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:14:14.094898 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:14:14.095242 [info ] [MainThread]: Required dependencies:
+[0m14:14:14.095605 [debug] [MainThread]: Executing "git --help"
+[0m14:14:14.101287 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:14:14.101973 [debug] [MainThread]: STDERR: "b''"
+[0m14:14:14.102351 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:14:14.102724 [info ] [MainThread]: Connection:
+[0m14:14:14.103104 [info ] [MainThread]:   host: localhost
+[0m14:14:14.103500 [info ] [MainThread]:   port: 5433
+[0m14:14:14.103926 [info ] [MainThread]:   user: postgres
+[0m14:14:14.104298 [info ] [MainThread]:   database: fuel_scm_dw
+[0m14:14:14.104605 [info ] [MainThread]:   schema: fuel_staging
+[0m14:14:14.104922 [info ] [MainThread]:   connect_timeout: 10
+[0m14:14:14.105222 [info ] [MainThread]:   role: None
+[0m14:14:14.105520 [info ] [MainThread]:   search_path: None
+[0m14:14:14.105826 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:14:14.106154 [info ] [MainThread]:   sslmode: None
+[0m14:14:14.106570 [info ] [MainThread]:   sslcert: None
+[0m14:14:14.106992 [info ] [MainThread]:   sslkey: None
+[0m14:14:14.107388 [info ] [MainThread]:   sslrootcert: None
+[0m14:14:14.107742 [info ] [MainThread]:   application_name: dbt
+[0m14:14:14.108091 [info ] [MainThread]:   autocommit: False
+[0m14:14:14.108420 [info ] [MainThread]:   retries: 1
+[0m14:14:14.108917 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m14:14:14.192513 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:14:14.221057 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:14:14.221510 [debug] [MainThread]: On debug: select 1 as id
+[0m14:14:14.221864 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:14:14.236462 [debug] [MainThread]: SQL status: SELECT 1 in 0.015 seconds
+[0m14:14:14.237456 [debug] [MainThread]: On debug: Close
+[0m14:14:14.237842 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:14:14.238208 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:14:14.238600 [info ] [MainThread]: Your new dbt project "transform" was created!
+Initialized new project in /home/phaw/Documents/Python/Data Engineer/fuel-supply-chain-pipeline/transform/transform
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:14:14.239906 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 144.36746, "process_in_blocks": "91144", "process_kernel_time": 0.279361, "process_mem_max_rss": "133892", "process_out_blocks": "88", "process_user_time": 1.770955}
+[0m14:14:14.240513 [debug] [MainThread]: Command `dbt init` succeeded at 14:14:14.240371 after 144.37 seconds
+[0m14:14:14.240981 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:14:14.241367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f604f5d50f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f604e94fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f604e936030>]}
+[0m14:14:14.241803 [debug] [MainThread]: Flushing usage events
+[0m14:14:16.390141 [debug] [MainThread]: An error was encountered while trying to flush usage events
